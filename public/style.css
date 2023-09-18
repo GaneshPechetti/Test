@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.chat_interface {
+  /* margin: 10px; */
+  /* box-sizing: content-box; */
+  width: 450px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding: 15px;
+  height: 450px;
+  background-color: #f9e0c8;
+}
+.msg_u {
+  display: flex;
+  margin: 4px;
+  justify-content: flex-end;
+}
+
+.userMsg {
+  border: 2px solid black;
+  padding: 5px;
+  background-color: #c79a94;
+  border-radius: 5px;
+  max-width: 400px;
+  user-select: none;
+}
+
+.msg_c {
+  margin: 4px;
+  display: flex;
+  justify-content: flex-start;
+}
+.botMsg {
+  border: 2px solid black;
+  padding: 5px;
+  background-color: #f6efee;
+  border-radius: 5px;
+  max-width: 400px;
+  pointer-events: none;
+  user-select: none;
+}
+
+.chatBot {
+  border: 2px solid black;
+  margin: 10px;
+  width: 453px;
+}
+
+.cFooter {
+  width: 450px;
+}
+
+/* .cFooter button {
+  width: 100px;
+  padding: 10px;
+  background-color: #75dbcd;
+  transition: 0.1s;
+} */
+
+.cHeader {
+  padding: 5px;
+  text-align: center;
+  background-color: #f78e64;
+  color: black;
+  width: 450px;
+}
+
+input:focus {
+  outline: none;
+}
+
+/* button:hover {
+  transform: scale(1.01);
+  transition-duration: 0.1s;
+  background-color: #a8df8e;
+} */
+
+.cFooter button {
+  /* display: inline-block; */
+  /* border-radius: 4px; */
+  background-color: #d9fce1;
+
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+  padding-bottom: 11px;
+  color: black;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  /* margin: 5px; */
+}
+
+button span {
+  cursor: pointer;
+  user-select: none;
+  color: #0eaa30;
+  display: inline-block;
+  position: relative;
+  font-size: 15px;
+  transition: 0.2s;
+  font-weight: bold;
+}
+
+button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -15px;
+  transition: 0.2s;
+}
+
+button:hover span {
+  padding-right: 20px;
+  color: white;
+}
+
+button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+button:hover {
+  font-weight: bolder;
+  background-color: #0eaa30;
+}
+
+input {
+  outline: none;
+  width: 350px;
+  border: none;
+  padding: 10px;
+}
